@@ -1,0 +1,18 @@
+{
+  "name": "raju",
+  "version": "1.0.0",
+  "description": "Replace colons with underscore from keys in OSM GeoJSON.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sajjad Anwar",
+  "license": "ISC",
+  "bin": {
+    "raju": "./index.js"
+    },
+  "dependencies": {
+    "jafar": "^1.0.0",
+    "minimist": "^1.2.0"
+  }
+}
