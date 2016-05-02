@@ -1,10 +1,14 @@
 function raju(obj) {
     obj.features.forEach(function(feature) {
-        var keys = Object.keys(feature.properties);
+        var props = feature.properties;
+        var keys = Object.keys(props);
         keys.forEach(function(key) {
-            var cleanKey = key.split(':').join('_');
-            feature.properties[cleanKey] = feature.properties[key];
-            delete feature.properties[key];
+            var keySplit = key.split(':');
+            if (keySplit.length >= 2) {
+                var cleanKey = keySplit.join('_');
+                props[cleanKey] = props[key];
+                delete props[key];
+            }
         });
     });
     return obj;
