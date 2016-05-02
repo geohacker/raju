@@ -1,6 +1,6 @@
 {
   "name": "raju",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Replace colons with underscore from keys in OSM GeoJSON.",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,10 @@
   },
   "author": "Sajjad Anwar",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geohacker/raju.git"
+  },
   "bin": {
     "raju": "./raju.js"
     },
