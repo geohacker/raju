@@ -9,7 +9,7 @@
   "author": "Sajjad Anwar",
   "license": "ISC",
   "bin": {
-    "raju": "./index.js"
+    "raju": "./raju.js"
     },
   "dependencies": {
     "jafar": "^1.0.0",
