@@ -1,6 +1,6 @@
 {
   "name": "raju",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Replace colons with underscore from keys in OSM GeoJSON.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,6 @@
     "raju": "./raju.js"
     },
   "dependencies": {
-    "jafar": "^1.0.0",
     "minimist": "^1.2.0"
   }
 }

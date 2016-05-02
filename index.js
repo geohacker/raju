@@ -1,11 +1,13 @@
-var jafar = require('jafar');
-
 function raju(obj) {
-    var jafarObject = new jafar({json: obj});
-    jafarObject.listAllKeys().forEach(function (key) {
-        jafarObject.replaceKey(key, key.split(':').join('_'), true, true);
+    obj.features.forEach(function(feature) {
+        var keys = Object.keys(feature.properties);
+        keys.forEach(function(key) {
+            var cleanKey = key.split(':').join('_');
+            feature.properties[cleanKey] = feature.properties[key];
+            delete feature.properties[key];
+        });
     });
-    return jafarObject.json;
+    return obj;
 }
 
 module.exports = raju;
